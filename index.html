@@ -8,80 +8,58 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            height: 3000px;
+            height: 3000px; 
         }
 
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 40px;
-            height: 40px;
-            background: black;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-
-        .fixed-box {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 320px;
-            height: 180px;
-            background: gray;
-        }
-
-        .clothing-container {
-            display: inline-block;
+        .container {
             position: relative;
-            margin: 50px;
+            display: inline-block;
+            width: 300px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
         }
 
-        .clothing-container img {
-            width: 200px;
+        .shirt {
+            width: 100%;
+            display: block;
         }
 
         .discount {
             position: absolute;
             top: 10px;
-            right: 10px;
+            left: 10px;
             background: black;
             color: white;
-            padding: 5px;
+            padding: 5px 10px;
             font-size: 14px;
+            font-weight: bold;
         }
 
-        .add-to-cart {
+        .cart-button {
             position: absolute;
             bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
             background: white;
-            padding: 5px;
             border: 1px solid black;
+            padding: 5px 10px;
             cursor: pointer;
         }
 
+        .cart-button:hover {
+            background: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div class="close-btn">×</div>
-
-    <div class="fixed-box"></div>
-
     <h1>CSS Positions Example</h1>
-
-    <div class="clothing-container">
+    <div class="container">
         <span class="discount">20% OFF</span>
-        <img src="https://github.com/capili23/-css-positions-task/blob/main/shirt%20(2).jpg?raw=true" alt="Shirt">
-        <div class="add-to-cart">Add to Cart</div>
+        <img src="shirt (2).jpg" alt="Shirt Image" class="shirt">
+        <button class="cart-button">Add to Cart</button>
     </div>
-
 </body>
 </html>
