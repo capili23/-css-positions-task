@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .shirt {
+            width: 100%;
+            position: relative;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positions Example</h1>
+    <div class="container">
+        <img src="shirt.jpg" alt="Shirt Image" class="shirt">
+        <div class="text-overlay">Limited Edition</div>
+    </div>
+</body>
+</html>
